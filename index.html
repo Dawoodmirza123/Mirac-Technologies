@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mirac Technologies</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/Mirac Tech facicon .png">
 </head>
 
 <body class="sb-nav-fixed">
@@ -18,8 +19,8 @@
         style="background-color: black !important; height: 80px;">
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3" href="index.html"><img
-                style="height: 75px !important; width: 210px !important; margin-top: -2px;"
-                src="images/Mirac tech logo.png" alt=""></a>
+                style="height: 80px !important; width: 200px; margin-top: px;"
+                src="images/Mirac Tech logo light grey.png" alt=""></a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -29,7 +30,8 @@
                 <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
                     aria-describedby="btnNavbarSearch" />
                 <button class="btn btn-primary" id="btnNavbarSearch" type="button"
-                    style="background-color: aqua; border-color: aqua;"><i class="fas fa-search"></i></button>
+                    style="background-color: rgb(81, 81, 255); border-color: rgb(81, 81, 255);"><i
+                        class="fas fa-search"></i></button>
             </div>
         </form>
         <!-- Navbar-->
@@ -41,54 +43,55 @@
                 style="background-color: black !important;">
                 <div class="sb-sidenav-menu">
                     <div class="nav"><br><br>
-                        <a class="nav-link" href="index.html" style="color: rgba(255, 255, 255, 0.473);"><i class="fa-solid fa-house"
-                                style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
+                        <a class="nav-link" href="index.html" style="color: rgb(81, 81, 255)"><i
+                                class="fa-solid fa-house" style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
                             Home
                         </a>
                         <br>
-                        <a class="nav-link" href="about.html" style="color: rgba(255, 255, 255, 0.473);"><i
+                        <a class="nav-link" href="about.html" style="color: rgba(255, 255, 255, 0.644);"><i
                                 class="fa-solid fa-address-card"
                                 style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
-                            About
+                            Company
+                        </a>
+                        <br>
+                        <a class="nav-link" href="tables.html" style="color: rgba(255, 255, 255, 0.644);"><i
+                                class="fa-solid fa-briefcase" style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
+                            Career
                         </a>
                         <br>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
-                            aria-expanded="false" aria-controls="collapsePages" style="color: rgba(255, 255, 255, 0.473)">
+                            aria-expanded="false" aria-controls="collapsePages"
+                            style="color: rgba(255, 255, 255, 0.644);">
                             <i class="fa-solid fa-desktop" style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
                             Services
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"
-                                    style="color: aqua !important;"></i></div>
+                                    style="color: rgb(81, 81, 255) !important;"></i></div>
                         </a>
                         <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages"
-                                style="color: rgba(255, 255, 255, 0.473) !important;">
-                                <a class="nav-link" href="login.html" style="color: rgba(255, 255, 255, 0.473);">
+                                style="color: rgba(255, 255, 255, 0.644) !important;">
+                                <a class="nav-link" href="login.html" style="color: rgba(255, 255, 255, 0.644);">
                                     Login
                                 </a>
-                                <a class="nav-link" href="register.html" style="color: rgba(255, 255, 255, 0.473);">
+                                <a class="nav-link" href="register.html" style="color: rgba(255, 255, 255, 0.644);">
                                     Register
                                 </a>
-                                <a class="nav-link" href="password.html" style="color: rgba(255, 255, 255, 0.473);">
+                                <a class="nav-link" href="password.html" style="color: rgba(255, 255, 255, 0.644);">
                                     Forgot Password
                                 </a>
                             </nav>
                         </div>
                         <br>
-                        <a class="nav-link" href="tables.html" style="color: rgba(255, 255, 255, 0.473);"><i class="fa-solid fa-envelope" style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
+                        <a class="nav-link" href="tables.html" style="color: rgba(255, 255, 255, 0.644);"><i
+                                class="fa-solid fa-envelope" style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
                             Contact
                         </a>
                     </div>
                 </div>
             </nav>
         </div>
-        <div id="layoutSidenav_content">
-            <main>
-                <div class="container-fluid px-4">
-                    <h1 class="mt-4">Dashboard</h1>
-                    <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Dashboard</li>
-                    </ol>
+
 
 
 
