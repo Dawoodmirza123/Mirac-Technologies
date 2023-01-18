@@ -1,112 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>Mirac Technologies</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="images/Mirac Tech facicon .png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+            integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="images/Mirac Tech facicon .png" type="image/x-icon">
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark"
-        style="background-color: black !important; height: 80px;">
-        <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html"><img
-                style="height: 80px !important; width: 200px; margin-top: px;"
-                src="images/Mirac Tech logo light grey.png" alt=""></a>
-        <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
-                class="fas fa-bars"></i></button>
-        <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
-                    aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button"
-                    style="background-color: rgb(81, 81, 255); border-color: rgb(81, 81, 255);"><i
-                        class="fas fa-search"></i></button>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+               
             </div>
-        </form>
-        <!-- Navbar-->
+            <br><br>
 
-    </nav>
-    <div id="layoutSidenav">
-        <div id="layoutSidenav_nav">
-            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion"
-                style="background-color: black !important;">
-                <div class="sb-sidenav-menu">
-                    <div class="nav"><br><br>
-                        <a class="nav-link" href="index.html" style="color: rgb(81, 81, 255)"><i
-                                class="fa-solid fa-house" style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
-                            Home
-                        </a>
-                        <br>
-                        <a class="nav-link" href="about.html" style="color: rgba(255, 255, 255, 0.644);"><i
-                                class="fa-solid fa-address-card"
-                                style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
-                            Company
-                        </a>
-                        <br>
-                        <a class="nav-link" href="tables.html" style="color: rgba(255, 255, 255, 0.644);"><i
-                                class="fa-solid fa-briefcase" style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
-                            Career
-                        </a>
-                        <br>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
-                            aria-expanded="false" aria-controls="collapsePages"
-                            style="color: rgba(255, 255, 255, 0.644);">
-                            <i class="fa-solid fa-desktop" style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
-                            Services
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"
-                                    style="color: rgb(81, 81, 255) !important;"></i></div>
-                        </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
-                            data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages"
-                                style="color: rgba(255, 255, 255, 0.644) !important;">
-                                <a class="nav-link" href="login.html" style="color: rgba(255, 255, 255, 0.644);">
-                                    Login
-                                </a>
-                                <a class="nav-link" href="register.html" style="color: rgba(255, 255, 255, 0.644);">
-                                    Register
-                                </a>
-                                <a class="nav-link" href="password.html" style="color: rgba(255, 255, 255, 0.644);">
-                                    Forgot Password
-                                </a>
-                            </nav>
-                        </div>
-                        <br>
-                        <a class="nav-link" href="tables.html" style="color: rgba(255, 255, 255, 0.644);"><i
-                                class="fa-solid fa-envelope" style="color: rgb(219, 169, 6); margin-right: 15px;"></i>
-                            Contact
-                        </a>
-                    </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    
+                    <a href="index.html"><i id="fa" class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</a>
+
+                </li>
+                <li>
+                    <a href="#"><i id="fa" class="fa-solid fa-address-card" style="margin-right: 10px;color: rgb(81, 81, 255);" ></i>Company</a>
+                </li>
+                <li>
+                    <a href="#servicesSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle"><i id="fa" class="fa-solid fa-desktop" style="margin-right: 10px;"></i>Services</a>
+                    <ul class="collapse list-unstyled" id="servicesSubmenu">
+                        <li>
+                            <a href="#websiteSubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Web Designing</a>
+                            <ul class="collapse list-unstyled" id="websiteSubmenu">
+                                <li>
+                                    <a href="#">HTML</a>
+                                </li>
+                                <li>
+                                    <a href="#">CSS</a>
+                                </li>
+                                <li>
+                                    <a href="#">JavaScript</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#dgSubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle">Digital Marketing</a>
+                            <ul class="collapse list-unstyled" id="dgSubmenu">
+                                <li>
+                                    <a href="#">On-page SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#">Technical SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#">Off-page SEO</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Cloud Computing</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i id="fa" class="fa-solid fa-briefcase" style="margin-right: 10px;"></i>Career</a>
+                </li>
+                <li>
+                    <a href="#"><i id="fa" class="fa-solid fa-envelope" style="margin-right: 10px;"></i>Contact</a>
+                </li>
+            </ul>
+
+            <!-- <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul> -->
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info"
+                        style="background-color: rgb(81, 81, 255); border-color: rgb(81, 81, 255); color: rgb(219, 169, 6);">
+                        <i class="fas fa-align-left"></i>
+
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <center>
+                        <img id="logo" src="images/Mirac Tech logo light grey.png" alt="">
+                    </center>
+
+
                 </div>
             </nav>
         </div>
+        <!-- Dark Overlay element -->
+        <div class="overlay"></div>
+
+    </div>
 
 
 
 
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                        crossorigin="anonymous"></script>
-                    <script src="scripts.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
-                        crossorigin="anonymous"></script>
-                    <script src="assets/demo/chart-area-demo.js"></script>
-                    <script src="assets/demo/chart-bar-demo.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
-                        crossorigin="anonymous"></script>
-                    <script src="js/datatables-simple-demo.js"></script>
-                    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
 </body>
 
 </html>
